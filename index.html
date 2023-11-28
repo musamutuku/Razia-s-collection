@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Razia's collection</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo" style="font-size: 40px;font-family: sans-serif; text-shadow: brown;">
+                    <img src="images/logo1.png" width="250px" height="42px" alt="logo">  
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li onmouseover="showCategory()" onmouseleave="showCategoryNone()"><a>Category</a></li>
+                        <div class="sub-menu" id="sub-menu" onmouseover="showCategory()" onmouseleave="showCategoryNone()">
+                            <ul>
+                                <a href="men's.html"><li>Men's wear</li></a><hr>
+                                <a href="women's.html"><li>Women's wear</li></a><hr>
+                                <a href="kid's.html"><li>Kid's wear</li></a>
+                            </ul>
+                        </div>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a><img src="images/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Grab Your Fashion<br>A New Brand!</h1>
+                    <p>Success isn't always about a greatness. It's about consistency. Consistent<br>hard work gains success. Greatness<br>will come.</p>
+                        <a href="" class="btn">Explore Now &#8594;</a>
+                </div> 
+                <div class="col-2 image-display">
+            </div> 
+            </div>
+            <div class="image-display1">
+                <div class="display-div">
+                    <img src="images/display/jacket.png">
+                </div>
+                <div class="display-div">
+                    <img src="images/display/casual.png">
+                </div>
+                <div class="display-div">
+                    <img src="images/display/dotted-dress.png">
+                </div>
+                <div class="display-div">
+                    <img src="images/display/mens.png">
+                </div>
+                <div class="display-div">
+                    <img src="images/display/hoodie.png">
+                </div>
+        </div> 
+        </div>
+    </div>
+ 
+    <!-----------featured categories--------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                 <img src="images/category/attractive-skirt.png" alt="category1">
+                </div> 
+                <div class="col-3">
+                 <img src="images/category/spotted-color-shirt.png" alt="category2">
+                </div> 
+                <div class="col-3">
+                 <img src="images/category/kid-dress.png" alt="category3">
+                </div> 
+             </div>
+         </div>
+        </div>
+    <!-----------latest fashions--------->  
+    <div class="small-container">
+        <h2 class="title">Latest Fashions</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/latest/black-shirt.jpeg">
+                <h4>New Black Shirt</h4>
+                <p>KES. 700.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/latest/full-shot-woman.jpg">
+                <h4>Shining Blue Dress</h4>
+                <p>KES. 800.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/latest/funny-crazy-glamo.png">
+                <h4>Crazy Glamor</h4>
+                <p>KES. 1500.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/latest/suit-coat.jpeg">
+                <h4>Suit Coat</h4>
+                <p>KES. 1000.00</p>
+            </div>
+        </div>
+    </div>   
+    <!------------footer----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Locate Us</h3>
+                    <ul>
+                        <li>P.O BOX</li>
+                        <li>36-90100</li>
+                        <li>Machakos</li>
+                        <li>Razia's Building</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Razia's collection</p>
+        </div>
+    </div>
+    <!-------------js for toggle menu---------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px")
+               {
+                   MenuItems.style.maxHeight = "200px"
+               }
+            else
+               {
+                   MenuItems.style.maxHeight = "0px"
+               }      
+        }
+    </script>
+
+    <!-- show categories -->
+    <script>
+        var category = document.getElementById("sub-menu");
+        function showCategory(){
+            category.style.display = 'block'
+        }function showCategoryNone(){
+            category.style.display = 'none'
+        }
+    </script>
+    </body>
+</html>

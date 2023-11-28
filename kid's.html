@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razia- category</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo1.png" width="250px" height="42px" alt="logo">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li onmouseover="showCategory()" onmouseleave="showCategoryNone()"><a>Category</a></li>
+            <div class="sub-menu" id="sub-menu" onmouseover="showCategory()" onmouseleave="showCategoryNone()">
+                <ul>
+                    <a href="men's.html"><li>Men's wear</li></a><hr>
+                    <a href="women's.html"><li>Women's wear</li></a><hr>
+                    <a href="kid's.html"><li>Kid's wear</li></a>
+                </ul>
+            </div>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" alt="cart" width="30px" height="30px"
+        /></a>
+        <img
+          src="images/menu.png"
+          alt="menu"
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <!-----------men's wear--------->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Men's Wear</h2>
+        <select>
+          <option>Default Sorting</option>
+          <option>Sort by price</option>
+          <option>Sort by popularity</option>
+          <option>Sort by rating</option>
+          <option>Sort by sale</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/kid's/aprone.jpeg">
+          <h4>Aprone for Kid</h4></a>
+          <p>KES. 650.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/kid's/black-suit.jpeg">
+            <h4>Black Suit</h4></a>
+            <p>KES. 900.00</p>
+          </div>
+          <div class="col-4">
+            <img src="images/kid's/bride-kid.jpeg">
+            <h4>Bride Kid Dress</h4></a>
+            <p>KES. 1400.00</p>
+          </div>
+          <div class="col-4">
+            <img src="images/kid's/flower-dress.jpeg">
+            <h4>Flower Dress</h4></a>
+            <p>KES. 850.00</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+            <img src="images/kid's/kaunta-suit.jpeg">
+            <h4>Counta Suit</h4></a>
+            <p>KES. 1100.00</p>
+          </div>
+          <div class="col-4">
+            <img src="images/kid's/kid-dress.jpeg">
+            <h4>Cotton Dress</h4></a>
+            <p>KES. 1000.00</p>
+          </div>
+          <div class="col-4">
+            <img src="images/kid's/kitenge-dress.jpeg">
+            <h4>Kitenge Dress</h4></a>
+            <p>KES. 1500.00</p>
+          </div>
+          <div class="col-4">
+            <img src="images/kid's/yellow-kids-wear.jpeg">
+            <h4>Yellow Kids Wear</h4></a>
+            <p>KES. 550.00</p>
+          </div>
+      </div>
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+
+    <!------------footer----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Locate Us</h3>
+                    <ul>
+                      <li>P.O BOX</li>
+                      <li>36-90100</li>
+                      <li>Machakos</li>
+                      <li>Razia's Building</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Razia's collection</p>
+        </div>
+    </div>
+    <!-------------js for toggle menu---------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px")
+               {
+                   MenuItems.style.maxHeight = "200px"
+               }
+            else
+               {
+                   MenuItems.style.maxHeight = "0px"
+               }      
+        }
+    </script>
+    <script>
+       var LoginForm = document.getElementById("LoginForm");
+       var RegForm = document.getElementById("RegForm");
+       var Indicator = document.getElementById("Indicator");
+         
+             function register(){
+                 RegForm.style.transform = "translateX(0px)";
+                 LoginForm.style.transform = "translateX(0px)";
+                 Indicator.style.transform = "translateX(100px)";
+             }
+
+             function login(){
+                 RegForm.style.transform = "translateX(300px)";
+                 LoginForm.style.transform = "translateX(300px)";
+                 Indicator.style.transform = "translateX(0px)";
+             }
+    </script>
+
+        <!-- show categories -->
+        <script>
+            var category = document.getElementById("sub-menu");
+            function showCategory(){
+                category.style.display = 'block'
+            }function showCategoryNone(){
+                category.style.display = 'none'
+            }
+        </script>
+  </body>
+</html>
