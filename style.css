@@ -474,4 +474,7 @@ form a {
   .cart-info p {
     display: none;
   }
+  .image-display1{
+    display: none;
+  }
 }
